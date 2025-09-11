@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { RouterOutlet } from '@angular/router';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { AuthService } from './auth/auth.service';
@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, MatSlideToggleModule, MenuComponent],
+  imports: [RouterOutlet, MatSlideToggleModule, MenuComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

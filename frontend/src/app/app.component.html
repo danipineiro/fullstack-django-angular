@@ -1,2 +1,4 @@
-<app-menu *ngIf="isLoggedIn"></app-menu>
+@if (isLoggedIn) {
+  <app-menu></app-menu>
+}
 <router-outlet></router-outlet>
